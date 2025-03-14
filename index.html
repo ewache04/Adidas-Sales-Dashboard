@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas U.S. Sales Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Content Container with white background -->
+    <div class="content-container">
+
+        <!-- Logo Section -->
+        <div class="align-center">
+            <img src="assets/logo3.jpeg" alt="Adidas Logo" class="logo">
+            
+        </div>
+    
+        <main>
+            <section class="container">
+                    <h1 class="align-center"><strong>U.S. Sales Insights (2020 - 2021)</strong></h1>
+                
+                <h2>📑 <strong>Table of Contents</strong></h2>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#business-requirements-problems">Business Requirements & Problems</a></li>
+                    <li><a href="#tools-technologies">Tools & Technologies</a></li>
+                    <li><a href="#data-source">Data Source</a></li>
+                    <li><a href="#data-exploration-in-r">Data Exploration in R</a></li>
+                    <li><a href="#visual-analysis-in-r">Visual Analysis in R</a></li>
+                    <li><a href="#power-bi-dashboard-design">Power BI Dashboard Design</a></li>
+                    <li><a href="#key-business-recommendations">Key Business Recommendations</a></li>
+                    <li><a href="#next-steps">Next Steps</a></li>
+                    <li><a href="#contact-information">Contact Information</a></li>
+                </ul>
+            </section>
+
+            <section id="overview" class="container">
+                <h2>📝 <strong>Overview (2020–2021)</strong></h2>
+                <p>This project leverages <strong>Power BI</strong> for interactive visualizations and dashboards while utilizing <strong>R</strong> for deeper data exploration, advanced analysis, and pattern recognition. By combining both tools, we deliver comprehensive insights into Adidas' sales performance.</p>
+            </section>
+
+            <section id="tools-technologies" class="container">
+                <h2>⚙️ <strong>Tools & Technologies Used</strong></h2>
+                <ul>
+                    <li>✅ <strong>R</strong> — For in-depth data exploration, cleaning, and analysis</li>
+                    <li>✅ <strong>Power BI</strong> — For interactive data visualization and reporting</li>
+                    <li>✅ <strong>Libraries in R:</strong> ggplot2, dplyr, lubridate, readxl, stringr</li>
+                    <li>✅ <strong>Web Display:</strong> HTML, CSS, JavaScript</li>
+                </ul>
+            </section>
+
+            <section id="data-source" class="container">
+                <h2>📂 <strong>Data Source</strong></h2>
+                <p><strong>File Name:</strong> Adidas US Sales Datasets.xlsx</p>
+                <p><strong>Rows:</strong> 9,648</p>
+                <p><strong>Columns:</strong> 13</p>
+
+                <h3>Key Columns:</h3>
+                <ul>
+                    <li><strong>Invoice Date</strong> – Sales transaction date</li>
+                    <li><strong>Region/State/City</strong> – Geographical data</li>
+                    <li><strong>Product</strong> – Product categories</li>
+                    <li><strong>Price per Unit</strong> – Pricing details</li>
+                    <li><strong>Units Sold</strong> – Quantity sold</li>
+                    <li><strong>Total Sales</strong> – Revenue generated</li>
+                    <li><strong>Operating Profit</strong> – Profit after operational costs</li>
+                    <li><strong>Sales Method</strong> – In-store vs online sales</li>
+                </ul>
+            </section>
+
+            <section id="data-exploration-in-r" class="container">
+                <h2>🔍 <strong>Data Exploration in R</strong></h2>
+                <h3>Step 1: Data Structure & Missing Values</h3>
+                <p>The data is inspected using the first five rows, and missing values are checked to ensure clean data for analysis.</p>
+                <img src="assets/images/R-Studio/data exploration/data_structure.gif" alt="Data Structure" class="centered-image">
+                
+                <!-- Horizontal Line -->
+                <hr class="thick_horizontal_line">
+                
+                <img src="assets/images/R-Studio/data exploration/check_for_missing_values.gif" alt="Missing Values Check" class="centered-image">
+
+                <!-- Horizontal Line -->
+                <hr class="thick_horizontal_line">
+
+                <h3>Step 2: Data Summary</h3>
+                <p>A summary of key statistical metrics was calculated, providing insights into the sales, profit margins, and quantities for various products.</p>
+                <img src="assets/images/R-Studio/data exploration/statistical_summary.gif" alt="Data Summary" class="centered-image">
+            </section>
+
+            <section id="visual-analysis-in-r" class="container">
+                <h2>📈 <strong>Visual Analysis in R</strong></h2>
+
+                <h3>Total Sales Over Time</h3>
+                <img src="assets/images/R-Studio/plots/sales_growth_over_time_Rplot.png" alt="Total Sales Over Time" class="centered-image">
+                
+                <!-- Horizontal Line -->
+                <hr class="thick_horizontal_line">
+                
+                <h3>Sales by Product Category</h3>
+                <img src="assets/images/R-Studio/plots/sales_by_region_Rplot.png" alt="Sales by Product Category" class="centered-image">
+                
+                <!-- Horizontal Line -->
+                <hr class="thick_horizontal_line">
+
+                <h3>Operating Profit vs Total Sales</h3>
+                <img src="assets/images/R-Studio/plots/profit_by_totalSales_scatterPlot_Rplot.png" alt="Profit vs Sales" class="centered-image">
+                
+            </section>
+
+            <section id="power-bi-dashboard-design" class="container">
+                <h2>📊 <strong>Power BI Dashboard Design</strong></h2>
+                <p>The visuals in Power BI are constructed to allow for an interactive exploration of the sales data, combining the insights from R with intuitive dashboards.</p>
+                <h3>Visual Layout</h3>
+                <ul>
+                    <li>Page 1 - Sales Overview</li>
+                    <li>Page 2 - Product Analysis</li>
+                    <li>Page 3 - Sales Method & Growth</li>
+                    <li>Page 4 - Deep Dive Analysis</li>
+                </ul>
+                
+                <!-- Horizontal Line -->
+                <hr class="thick_horizontal_line">
+
+                <img src="assets/images/Power BI/adidas_sales_insights.gif" alt="Power BI Dashboard - Sales Insights" class="centered-image">
+                
+                <!-- Horizontal Line -->
+                <hr class="thick_horizontal_line">
+
+                <!-- Video Demo -->
+                <h3>Power BI Dashboard Video Demo</h3>
+                <video controls class="centered-video">
+                    <source src="assets/videos/dashboard_demo_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section id="key-business-recommendations" class="container">
+                <h2>📈 <strong>Key Business Recommendations</strong></h2>
+                <ul>
+                    <li><strong>Focus on Q4 Marketing:</strong> Capitalize on seasonal sales spikes during the holiday season.</li>
+                    <li><strong>Expand High-margin Products:</strong> Prioritize high-performing categories like Men’s Athletic Footwear.</li>
+                    <li><strong>Improve Online Sales:</strong> Strategize to boost underperforming online sales channels.</li>
+                    <li><strong>Optimize Pricing Strategy:</strong> Evaluate pricing for high-revenue, low-margin products to enhance profitability.</li>
+                    <li><strong>Increase Regional Inventory:</strong> Focus on the Northeast region, which has the highest demand.</li>
+                </ul>
+            </section>
+        </main>
+    </div> <!-- End of content-container -->
+
+    <footer>
+        <div class="footer-content">
+            <h3>Let's Connect:</h3>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/jeremiah-o-517729122/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ewache04/Adidas-Sales-Dashboard" target="_blank">GitHub</a></li>
+            </ul>
+            <p>Designer: <strong>Jeremiah Ochepo</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
